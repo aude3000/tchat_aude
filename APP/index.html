@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+
+    <title>tchat</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+
+<body>
+
+<nav class="nav">
+    <div class="navTitle">
+        <h1>3WA T'CHAT</h1>
+    </div>
+
+    <div class="elementsDeConnexion">
+
+
+            <input name="pseudo"
+                   type="text"
+                   maxlength="20"
+                   placeholder = "Pseudo"
+                   Id="userNickname"/>
+
+            <!--
+            <input name="prenom"
+                   type="password"
+                   maxlength="10"
+                   placeholder = "Mot de passe"
+                   autofocus required
+                   class="connexion"/>
+
+            <input name="action"
+                   value="userConnect"
+                   type="hidden"
+                   class="connexion"/>
+            <button type="submit"
+                    class="connexion">CONNEXION</button>
+            -->
+
+
+    </div>
+</nav>
+
+<section class="section_tchat">
+
+    <div class="div_date">
+        <!-- <p>date<p> -->
+    </div>
+
+    <div class="div_utilisateur">
+        <!-- <p>utilisateur</p> -->
+    </div>
+
+    <div class="div_message">
+        <!-- <p>texte</p> -->
+    </div>
+
+</section>
+
+<aside class="aside_liste_utilisateurs">
+
+    <p class="participants">participants</p>
+
+    <ul id="liste_pseudos">
+
+    </ul>
+
+
+</aside>
+
+<section class="section_mep"></section>
+
+<section class="section_saisie">
+
+    <div>
+        <form action="page.php" method="POST" class="formulaire">
+            <textarea class="textarea"name"comment" rows="0" cols"0" placeholder ="exprimez-vous ici"></textarea>
+    </div>
+
+    <div class="div-bouton">
+        <input name"validate" type="hidden">
+        <input class="bouton" name"validate" type="submit" value="diffuser" >
+    </div>
+
+</section>
+
+<!-- jquery -->
+<script src="js/jquery/jquery-1.11.1.min.js"></script>
+<!-- main.js -->
+<script src="js/main.js"></script>
+
+
+</body>
